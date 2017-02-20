@@ -14,14 +14,14 @@ public class CatalogueService {
 			new CatalogEntry(1, null, "Instruments", null, true, 1L),
 			new CatalogEntry(2, null, "Family Fun", null, true, 2L),
 
-			new CatalogEntry(3, 1L, "BoJack Horseman", new BigDecimal("19.99"), false, 0L),
-			new CatalogEntry(4, 2L, "Princess Carolyn", new BigDecimal("29.99"), false, 0L),
-			new CatalogEntry(5, 3L, "Diane Nguyen", new BigDecimal("29.99"), false, 0L),
+			new CatalogEntry(3, 1000L, "BoJack Horseman", new BigDecimal("19.99"), false, 0L),
+			new CatalogEntry(4, 1001L, "Princess Carolyn", new BigDecimal("29.99"), false, 0L),
+			new CatalogEntry(5, 1002L, "Diane Nguyen", new BigDecimal("29.99"), false, 0L),
 
-			new CatalogEntry(6, 4L, "Pan Flute", new BigDecimal("199.99"), false, 1L),
-			new CatalogEntry(7, 5L, "Panini Flute", new BigDecimal("99.99"), false, 1L),
+			new CatalogEntry(6, 1003L, "Pan Flute", new BigDecimal("199.99"), false, 1L),
+			new CatalogEntry(7, 1004L, "Panini Flute", new BigDecimal("99.99"), false, 1L),
 
-			new CatalogEntry(8, 6L, "Portal Gun", new BigDecimal("999.99"), false, 2L),
+			new CatalogEntry(8, 1005L, "Portal Gun", new BigDecimal("999.99"), false, 2L),
 
 			new CatalogEntry(9, 7L, "Nothing", new BigDecimal("999.99"), false, null),
 	};
