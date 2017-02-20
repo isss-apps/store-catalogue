@@ -10,14 +10,17 @@ public class CatalogEntry {
 
 	private boolean isDir;
 
+	private Long rootCategory;
+
 	public CatalogEntry() {}
 
-	public CatalogEntry(long id, Long storeId, String name, BigDecimal price, boolean isDir) {
+	public CatalogEntry(long id, Long storeId, String name, BigDecimal price, boolean isDir, Long rootCategory) {
 		this.id = id;
 		this.storeId = storeId;
 		this.name = name;
 		this.price = price;
 		this.isDir = isDir;
+		this.rootCategory = rootCategory;
 	}
 
 	public long getId() {
@@ -61,5 +64,13 @@ public class CatalogEntry {
 
 	public void setDir(boolean dir) {
 		isDir = dir;
+	}
+
+	public Long getRootCategory() {
+		return rootCategory;
+	}
+
+	public void setRootCategory(Long rootCategory) {
+		this.rootCategory = rootCategory;
 	}
 }
