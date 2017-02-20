@@ -46,6 +46,7 @@ public class CatalogueRoute extends FatJarRouter {
 
 
 		from("direct:timeout")
-				.delay(5 * 60_000).asyncDelayed();
+				.delay(5 * 60_000).asyncDelayed()
+				.setHeader("CamelHttpResponseCode", simple("503"));
 	}
 }
