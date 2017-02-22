@@ -1,17 +1,18 @@
 package org.foobarter.isss.catalogue;
 
+import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.rest.RestBindingMode;
-import org.apache.camel.spring.boot.FatJarRouter;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CatalogueRoute extends FatJarRouter {
+public class CatalogueRoute extends RouteBuilder {
 
 	// must have a main method spring-boot can run
 	public static void main(String[] args) {
-		FatJarRouter.main(args);
+		SpringApplication.run(CatalogueRoute.class, args);
 	}
 
 	@Autowired
