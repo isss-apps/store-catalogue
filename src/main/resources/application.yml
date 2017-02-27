@@ -1,6 +1,6 @@
 spring:
   main:
-    sources: org.foobarter.isss.catalogue
+    sources: org.foobarter.isss
 
 management:
   port: 8081
