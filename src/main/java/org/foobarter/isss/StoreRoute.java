@@ -5,7 +5,6 @@ import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.camel.processor.idempotent.MemoryIdempotentRepository;
 
 import org.foobarter.isss.catalogue.CatalogEntry;
-import org.foobarter.isss.catalogue.CatalogueRoute;
 import org.foobarter.isss.catalogue.CatalogueService;
 import org.foobarter.isss.order.Order;
 import org.foobarter.isss.order.OrderProcessor;
@@ -18,7 +17,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StoreRoute extends RouteBuilder {
 	// must have a main method spring-boot can run
 	public static void main(String[] args) {
-		SpringApplication.run(CatalogueRoute.class, args);
+		SpringApplication.run(StoreRoute.class, args);
 	}
 
 	@Autowired
